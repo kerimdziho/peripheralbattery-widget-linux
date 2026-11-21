@@ -1,0 +1,10 @@
+{
+  "_comment": "Format example (Compx-style framing). Files starting with '_' are ignored. See docs/PROFILES.md.",
+  "name": "Example Wireless Mouse",
+  "kind": "mouse",
+  "match": { "vendor": "ffff", "product": "0001", "usage_page": "ff02" },
+  "request": { "type": "output", "hex": "08 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 49" },
+  "response": { "type": "input", "prefix": "08 04", "timeout_ms": 300, "sum_equals": "55" },
+  "percent": { "byte": 6, "min": 0, "max": 100 },
+  "charging": { "byte": 7 }
+}

@@ -1,0 +1,12 @@
+Device AA:BB:CC:DD:EE:01 (public)
+	Name: Keychron K2
+	Alias: Keychron K2
+	Class: 0x00000540
+	Icon: input-keyboard
+	Paired: yes
+	Trusted: yes
+	Blocked: no
+	Connected: yes
+	LegacyPairing: no
+	UUID: Human Interface Device... (00001124-0000-1000-8000-00805f9b34fb)
+	Battery Percentage: 0x2d (45)

@@ -1,0 +1,10 @@
+{
+  "_comment": "UNVERIFIED CANDIDATE - not shipped. Variant B: request as a FEATURE report, answer arrives as an input report with id 09 (level 0..10 on some firmware). Test with hid-probe first.",
+  "name": "Scyrox mouse (2.4 GHz, variant B)",
+  "kind": "mouse",
+  "match": { "vendor": "3554", "product": "f5f7" },
+  "request": { "type": "feature", "hex": "08 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 49" },
+  "response": { "type": "input", "prefix": "09", "timeout_ms": 400 },
+  "percent": { "byte": 6, "min": 0, "max": 100 },
+  "charging": { "byte": 7 }
+}

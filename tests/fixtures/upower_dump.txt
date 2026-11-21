@@ -1,0 +1,131 @@
+Device: /org/freedesktop/UPower/devices/line_power_AC
+  native-path:          AC
+  power supply:         yes
+  updated:              Fri 20 Nov 2026 02:10:00 CET (5 seconds ago)
+  has history:          no
+  has statistics:       no
+  line-power
+    warning-level:       none
+    online:              yes
+    icon-name:          'ac-adapter-symbolic'
+
+Device: /org/freedesktop/UPower/devices/battery_BAT0
+  native-path:          BAT0
+  vendor:               SMP
+  model:                5B10W13930
+  serial:               1234
+  power supply:         yes
+  updated:              Fri 20 Nov 2026 02:10:00 CET (5 seconds ago)
+  has history:          yes
+  has statistics:       yes
+  battery
+    present:             yes
+    rechargeable:        yes
+    state:               discharging
+    warning-level:       none
+    energy:              35.2 Wh
+    percentage:          62%
+    capacity:            91.5%
+    technology:          lithium-polymer
+    icon-name:          'battery-good-symbolic'
+  History (charge):
+    1700000000	62.000	discharging
+
+Device: /org/freedesktop/UPower/devices/mouse_hidpp_battery_0
+  native-path:          hidpp_battery_0
+  vendor:               Logitech
+  model:                MX Master 3
+  serial:               4082-00-00
+  power supply:         no
+  updated:              Fri 20 Nov 2026 02:09:40 CET (25 seconds ago)
+  has history:          yes
+  has statistics:       no
+  mouse
+    present:             yes
+    rechargeable:        yes
+    state:               discharging
+    warning-level:       none
+    battery-level:       normal
+    percentage:          80%
+    icon-name:          'battery-full-symbolic'
+
+Device: /org/freedesktop/UPower/devices/keyboard_dev_AA_BB_CC_DD_EE_01
+  native-path:          /org/bluez/hci0/dev_AA_BB_CC_DD_EE_01
+  model:                Keychron K2
+  power supply:         no
+  updated:              Fri 20 Nov 2026 02:09:40 CET (25 seconds ago)
+  has history:          no
+  has statistics:       no
+  keyboard
+    present:             yes
+    rechargeable:        yes
+    state:               charging
+    warning-level:       none
+    percentage:          45%
+    icon-name:          'battery-good-charging-symbolic'
+
+Device: /org/freedesktop/UPower/devices/headset_dev_11_22_33_44_55_66
+  native-path:          /org/bluez/hci0/dev_11_22_33_44_55_66
+  model:                WH-1000XM4
+  power supply:         no
+  updated:              Fri 20 Nov 2026 02:09:40 CET (25 seconds ago)
+  has history:          no
+  has statistics:       no
+  headset
+    present:             yes
+    rechargeable:        yes
+    state:               unknown
+    warning-level:       none
+    percentage:          20%
+    icon-name:          'battery-low-symbolic'
+
+Device: /org/freedesktop/UPower/devices/gaming_input_ps_controller_battery_a0_b1_c2_d3_e4_f5
+  native-path:          ps-controller-battery-a0:b1:c2:d3:e4:f5
+  model:                Wireless Controller
+  power supply:         no
+  updated:              Fri 20 Nov 2026 02:09:40 CET (25 seconds ago)
+  has history:          no
+  has statistics:       no
+  gaming-input
+    present:             yes
+    rechargeable:        yes
+    state:               discharging
+    warning-level:       none
+    percentage:          5%
+    icon-name:          'battery-caution-symbolic'
+
+Device: /org/freedesktop/UPower/devices/remote_control_presenter
+  native-path:          presenter0
+  model:                Wireless Presenter
+  power supply:         no
+  remote-control
+    present:             yes
+    state:               unknown
+    battery-level:       low
+    icon-name:          'battery-low-symbolic'
+
+Device: /org/freedesktop/UPower/devices/ups_hiddev0
+  native-path:          hiddev0
+  model:                Back-UPS
+  power supply:         yes
+  ups
+    present:             yes
+    state:               fully-charged
+    percentage:          100%
+
+Device: /org/freedesktop/UPower/devices/DisplayDevice
+  power supply:         yes
+  updated:              Fri 20 Nov 2026 02:10:00 CET (5 seconds ago)
+  has history:          no
+  has statistics:       no
+  battery
+    present:             yes
+    state:               discharging
+    percentage:          62%
+
+Daemon:
+  daemon-version:  1.90.6
+  on-battery:      yes
+  lid-is-closed:   no
+  lid-is-present:  yes
+  critical-action: HybridSleep

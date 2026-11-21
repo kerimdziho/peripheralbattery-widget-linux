@@ -1,0 +1,6 @@
+{"name":"HeadsetControl","version":"3.0.0","api_version":"1.0","hidapi_version":"0.14.0","device_count":2,"devices":[
+ {"status":"success","device":"Arctis Nova 7","vendor":"SteelSeries","product":"Arctis Nova 7","id_vendor":"0x1038","id_product":"0x2202",
+  "capabilities":["CAP_BATTERY_STATUS"],"battery":{"status":"BATTERY_CHARGING","level":64}},
+ {"status":"success","device":"Corsair HS80","vendor":"Corsair","product":"HS80 RGB Wireless","id_vendor":"0x1b1c","id_product":"0x0a6b",
+  "capabilities":["CAP_BATTERY_STATUS"],"battery":{"status":"BATTERY_UNAVAILABLE","level":-1}}
+]}

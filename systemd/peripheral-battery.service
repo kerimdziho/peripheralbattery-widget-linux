@@ -1,0 +1,23 @@
+[Unit]
+Description=Peripheral Battery - low-battery alerts for wireless devices
+Documentation=https://github.com/kerimdziho/peripheralbattery-widget-linux
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/peripheral-battery watch
+Restart=on-failure
+RestartSec=10
+# Hardening - the service only reads D-Bus / sysfs and writes its state file.
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=%S/peripheral-battery %t
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+RestrictNamespaces=yes
+LockPersonality=yes
+
+[Install]
+WantedBy=graphical-session.target

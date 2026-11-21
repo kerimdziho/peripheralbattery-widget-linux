@@ -1,0 +1,21 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "you@example.com",
+                "Name": "kerimdziho"
+            }
+        ],
+        "Category": "System Information",
+        "Description": "Battery levels of your wireless mice, keyboards, headphones and gamepads, with customizable low-battery alerts.",
+        "EnabledByDefault": true,
+        "Icon": "preferences-desktop-peripherals",
+        "Id": "io.github.peripheralbattery",
+        "License": "MIT",
+        "Name": "Peripheral Battery",
+        "Version": "1.0.0",
+        "Website": "https://github.com/kerimdziho/peripheralbattery-widget-linux"
+    },
+    "KPackageStructure": "Plasma/Applet",
+    "X-Plasma-API-Minimum-Version": "6.0"
+}

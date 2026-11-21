@@ -1,0 +1,30 @@
+name: Release
+
+# Push a tag such as v1.0.0 to publish a GitHub release with the .plasmoid attached.
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the tag matches metadata.json
+        run: |
+          version=$(python3 -c "import json;print(json.load(open('plasmoid/metadata.json'))['KPlugin']['Version'])")
+          if [ "v$version" != "${GITHUB_REF_NAME}" ]; then
+            echo "Tag ${GITHUB_REF_NAME} does not match metadata.json version v$version" >&2
+            exit 1
+          fi
+      - name: Test
+        run: python3 -m unittest discover -s tests
+      - name: Build
+        run: python3 scripts/build_plasmoid.py
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh release create "${GITHUB_REF_NAME}" dist/*.plasmoid --title "${GITHUB_REF_NAME}" --generate-notes

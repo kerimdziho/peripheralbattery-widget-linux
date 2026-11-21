@@ -1,0 +1,34 @@
+name: Bug report
+description: A device is missing, a level is wrong, or an alert misbehaves
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you expect instead?
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device (brand + model) and connection
+      placeholder: "Logitech MX Master 3 via Bluetooth"
+  - type: input
+    id: system
+    attributes:
+      label: Distro, Plasma version, widget version
+      placeholder: "Fedora 43, Plasma 6.5, v1.0.0"
+    validations:
+      required: true
+  - type: textarea
+    id: doctor
+    attributes:
+      label: Output of `peripheral-battery doctor`
+      description: "Install the CLI with `./scripts/install.sh --cli`, or run `python3 ~/.local/share/plasma/plasmoids/io.github.peripheralbattery/contents/code/pbattery.py doctor`."
+      render: text
+  - type: textarea
+    id: upower
+    attributes:
+      label: Output of `upower --dump` (only the lines for the affected device)
+      render: text

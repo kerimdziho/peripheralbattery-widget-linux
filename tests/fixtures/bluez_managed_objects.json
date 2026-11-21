@@ -1,0 +1,32 @@
+{"type":"a{oa{sa{sv}}}","data":[{
+  "/org/bluez":{"org.bluez.AgentManager1":{},"org.bluez.ProfileManager1":{}},
+  "/org/bluez/hci0":{"org.bluez.Adapter1":{"Powered":{"type":"b","data":true}}},
+  "/org/bluez/hci0/dev_AA_BB_CC_DD_EE_01":{
+    "org.bluez.Device1":{
+      "Address":{"type":"s","data":"AA:BB:CC:DD:EE:01"},
+      "Alias":{"type":"s","data":"Keychron K2"},
+      "Name":{"type":"s","data":"Keychron K2"},
+      "Icon":{"type":"s","data":"input-keyboard"},
+      "Connected":{"type":"b","data":true},
+      "Paired":{"type":"b","data":true}},
+    "org.bluez.Battery1":{"Percentage":{"type":"y","data":45}}},
+  "/org/bluez/hci0/dev_11_22_33_44_55_66":{
+    "org.bluez.Device1":{
+      "Address":{"type":"s","data":"11:22:33:44:55:66"},
+      "Alias":{"type":"s","data":"WH-1000XM4"},
+      "Icon":{"type":"s","data":"audio-headset"},
+      "Connected":{"type":"b","data":true}},
+    "org.bluez.Battery1":{"Percentage":{"type":"y","data":20}}},
+  "/org/bluez/hci0/dev_DE_AD_BE_EF_00_01":{
+    "org.bluez.Device1":{
+      "Address":{"type":"s","data":"DE:AD:BE:EF:00:01"},
+      "Alias":{"type":"s","data":"Old Mouse"},
+      "Icon":{"type":"s","data":"input-mouse"},
+      "Connected":{"type":"b","data":false}},
+    "org.bluez.Battery1":{"Percentage":{"type":"y","data":99}}},
+  "/org/bluez/hci0/dev_DE_AD_BE_EF_00_02":{
+    "org.bluez.Device1":{
+      "Address":{"type":"s","data":"DE:AD:BE:EF:00:02"},
+      "Alias":{"type":"s","data":"No battery info"},
+      "Connected":{"type":"b","data":true}}}
+}]}
